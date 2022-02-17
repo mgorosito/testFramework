@@ -1,6 +1,6 @@
 package com.challenge.backend;
 
-import com.challenge.core.TestBase;
+import com.challenge.config.TestBase;
 import com.challenge.helpers.BreweryApiHelper;
 import com.challenge.model.api.brewery.Brewery;
 import com.challenge.support.BreweryTypes;

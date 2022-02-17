@@ -1,7 +1,6 @@
-package com.challenge.core;
+package com.challenge.config;
 
 import com.challenge.utils.BaseHTMLReporter;
-import com.challenge.config.BaseConf;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.test.context.ContextConfiguration;
