@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.fravega</groupId>
+    <groupId>com.challenge</groupId>
     <artifactId>mgg-challenge</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -21,8 +21,6 @@
         <testng.version>6.14.3</testng.version>
         <jackson.version>2.9.9</jackson.version>
         <extentreports.version>4.0.9</extentreports.version>
-        <commons-io.version>2.6</commons-io.version>
-        <assertJ.version>3.12.0</assertJ.version>
         <maven-checkstyle-plugin.version>3.1.1</maven-checkstyle-plugin.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
     </properties>
@@ -78,16 +76,6 @@
             <artifactId>jackson-datatype-jsr310</artifactId>
             <version>${jackson.version}</version>
         </dependency>
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>${commons-io.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.assertj</groupId>
-            <artifactId>assertj-core</artifactId>
-            <version>${assertJ.version}</version>
-        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -127,7 +115,7 @@
                     <configLocation>mgg_checks.xml</configLocation>
                     <encoding>UTF-8</encoding>
                     <consoleOutput>true</consoleOutput>
-                    <failsOnError>true</failsOnError>
+                    <failsOnError>false</failsOnError>
                     <violationSeverity>error</violationSeverity>
                     <includeTestResources>true</includeTestResources>
                     <includeTestSourceDirectory>true</includeTestSourceDirectory>
